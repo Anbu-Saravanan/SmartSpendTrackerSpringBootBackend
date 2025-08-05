@@ -74,7 +74,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(List.of("http://localhost:3000","")); // <--- allow only React dev server
+        config.setAllowedOrigins(List.of("http://localhost:3000","https://smart-spend-tracker-react-frontend.vercel.app")); // <--- allow only React dev server
 
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
