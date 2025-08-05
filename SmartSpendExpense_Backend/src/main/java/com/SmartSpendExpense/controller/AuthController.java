@@ -146,7 +146,7 @@ public class AuthController {
         userRepository.save(user);
 
         // Send email with link
-        String resetLink = "http://localhost:3000/reset-password?token=" + token;
+        String resetLink = "https://smart-spend-tracker-react-frontend.vercel.app/reset-password?token=" + token;
         SimpleMailMessage msg = new SimpleMailMessage();
         msg.setTo(user.getEmail());
         msg.setSubject("SmartSpend Password Reset");
