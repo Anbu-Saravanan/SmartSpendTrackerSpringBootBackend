@@ -46,7 +46,7 @@ mvn spring-boot:run
 Default Creation of one Admin 
 ----------------------------
 Email:anbu.saravanan11211@gmail.com
-Password:admin123
+Password:admin
 
 API Endpoints
 POST /api/auth/register - Register new user
